@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/jimbo/static/css/main.b2da56cf.css",
+    "main.js": "/jimbo/static/js/main.cb85ef43.js",
+    "index.html": "/jimbo/index.html",
+    "main.b2da56cf.css.map": "/jimbo/static/css/main.b2da56cf.css.map",
+    "main.cb85ef43.js.map": "/jimbo/static/js/main.cb85ef43.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b2da56cf.css",
+    "static/js/main.cb85ef43.js"
+  ]
+}
