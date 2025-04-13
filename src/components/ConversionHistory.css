@@ -1,0 +1,63 @@
+.history-container {
+  margin-top: 40px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.app.light .history-container {
+  background: rgba(0, 0, 0, 0.03);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.currency-filter {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.currency-filter h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  color: #e0e7ff;
+}
+
+.app.light .currency-filter h3 {
+  color: #2c3e50;
+}
+
+.currency-filter select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.app.light .currency-filter select {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.05);
+  color: #2c3e50;
+}
+
+.currency-filter select:focus {
+  border-color: #6366f1;
+  outline: none;
+  box-shadow: 0 0 8px rgba(99, 102, 241, 0.3);
+}
+
+.history-container p {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  color: #e0e7ff;
+}
+
+.app.light .history-container p {
+  color: #2c3e50;
+}

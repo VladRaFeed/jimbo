@@ -1,10 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { App } from 'components/App';
-import './index.css';
+import { createRoot } from 'react-dom/client'; // Імпортуємо createRoot
+import App from './components/App';
+import { ThemeProvider } from './components/ThemeContext';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const container = document.getElementById('root'); // Отримуємо елемент root
+const root = createRoot(container); // Створюємо корінь
+
+root.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
 );

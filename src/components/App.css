@@ -1,0 +1,260 @@
+/* Скидання стандартних стилів */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Основний контейнер */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  transition: background 0.5s ease;
+}
+
+/* Світла тема */
+.light {
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  color: #2c3e50;
+}
+
+/* Темна тема */
+.dark {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: #e0e7ff;
+}
+
+/* Хедер */
+.header {
+  width: 100%;
+  padding: 20px 40px;
+  background: linear-gradient(90deg, #2b2b4e, #1a1a2e);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.app.light .header {
+  background: linear-gradient(90deg, #e9ecef, #d9e2ec);
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #e0e7ff;
+}
+
+.app.light .header h1 {
+  color: #2c3e50;
+}
+
+/* Кнопки у хедері */
+.header-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.graphs-button,
+.theme-toggle {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.graphs-button:hover,
+.theme-toggle:hover {
+  background: linear-gradient(90deg, #4f46e5, #9333ea);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.theme-toggle .theme-icon {
+  font-size: 1.2rem;
+}
+
+/* Контейнер конвертера */
+.converter-container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  margin-top: 20px;
+}
+
+.app.light .converter-container {
+  background: rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Група введення */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+/* Група вибору валют */
+.currency-select-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.currency-select-group .arrow {
+  font-size: 2rem;
+  color: #e0e7ff;
+}
+
+.app.light .currency-select-group .arrow {
+  color: #2c3e50;
+}
+
+/* Група кнопок */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* Кнопка конвертації */
+.convert-button {
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  color: white;
+  border: none;
+  padding: 16px 40px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 250px;
+}
+
+.convert-button:hover {
+  background: linear-gradient(90deg, #4f46e5, #9333ea);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.app.dark .modal-content {
+  background: #1a1a2e;
+  color: #e0e7ff;
+}
+
+/* Кнопка історії */
+.history-toggle {
+  background: rgba(255, 255, 255, 0.1);
+  color: #e0e7ff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 14px 30px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 250px;
+}
+
+.app.light .history-toggle {
+  background: rgba(0, 0, 0, 0.05);
+  color: #2c3e50;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.history-toggle:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #6366f1;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.app.light .history-toggle:hover {
+  background: rgba(0, 0, 0, 0.1);
+  border-color: #6366f1;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .app {
+    padding: 10px;
+  }
+  .header {
+    padding: 15px 20px;
+  }
+  .header h1 {
+    font-size: 2rem;
+  }
+  .graphs-button,
+  .theme-toggle {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
+  .theme-toggle .theme-icon {
+    font-size: 1rem;
+  }
+  .converter-container {
+    padding: 25px;
+  }
+  .currency-select-group {
+    flex-direction: row;
+    gap: 15px;
+  }
+  .convert-button,
+  .history-toggle {
+    padding: 14px 30px;
+    font-size: 1rem;
+    max-width: 200px;
+  }
+}

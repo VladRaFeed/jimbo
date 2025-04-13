@@ -1,0 +1,169 @@
+.currency-converter {
+    text-align: center;
+  }
+  
+  .currency-converter h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .quick-select {
+    margin-bottom: 20px;
+  }
+  
+  .quick-select h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .quick-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .quick-buttons button {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(90deg, #6366f1, #a855f7);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .quick-buttons button:hover {
+    background: linear-gradient(90deg, #4f46e5, #9333ea);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 40px;
+  }
+  
+  .currency-select-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .currency-select-group span {
+    font-size: 2rem;
+    color: #e0e7ff;
+  }
+  
+  .app.light .currency-select-group span {
+    color: #2c3e50;
+  }
+  
+  .convert-button {
+    background: linear-gradient(90deg, #6366f1, #a855f7);
+    color: white;
+    border: none;
+    padding: 16px 40px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  .convert-button:hover {
+    background: linear-gradient(90deg, #4f46e5, #9333ea);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .history {
+    margin-top: 20px;
+  }
+  
+  .history h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .history-button {
+    background: rgba(255, 255, 255, 0.1);
+    color: #e0e7ff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 14px 30px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  .app.light .history-button {
+    background: rgba(0, 0, 0, 0.05);
+    color: #2c3e50;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .history-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #6366f1;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .app.light .history-button:hover {
+    background: rgba(0, 0, 0, 0.1);
+    border-color: #6366f1;
+  }
+  
+  .history ul {
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 10px;
+  }
+  
+  .history li {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-family: 'Inter', sans-serif;
+    color: #e0e7ff;
+  }
+  
+  .app.light .history li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: #2c3e50;
+  }
+  
+  .search-input {
+    width: 100%;
+    max-width: 200px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+  }
+  
+  .app.light .search-input {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.05);
+    color: #2c3e50;
+  }
+  
+  .search-input:focus {
+    border-color: #6366f1;
+    outline: none;
+    box-shadow: 0 0 8px rgba(99, 102, 241, 0.3);
+  }

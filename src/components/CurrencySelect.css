@@ -1,0 +1,96 @@
+.currency-select {
+    position: relative;
+    width: 100%;
+    max-width: 130px;
+  }
+  
+  .currency-select input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+  }
+  
+  .app.light .currency-select input {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.05);
+    color: #2c3e50;
+  }
+  
+  .currency-select input:focus {
+    border-color: #6366f1;
+    outline: none;
+    box-shadow: 0 0 8px rgba(99, 102, 241, 0.3);
+  }
+  
+  .currency-select select {
+    width: 100%;
+    padding: 12px 30px 12px 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+  }
+  
+  .app.light .currency-select select {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.05);
+    color: #2c3e50;
+  }
+  
+  .currency-select select:focus {
+    border-color: #6366f1;
+    outline: none;
+    box-shadow: 0 0 8px rgba(99, 102, 241, 0.3);
+  }
+  
+  .currency-select select option {
+    background: #1a1a2e;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    padding: 10px;
+  }
+  
+  .app.light .currency-select select option {
+    background: #f0f4f8;
+    color: #2c3e50;
+  }
+  
+  .currency-select {
+    position: relative;
+  }
+  
+  .currency-select::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%) rotate(45deg);
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    pointer-events: none;
+  }
+  
+  .app.light .currency-select::after {
+    border-right: 2px solid #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+  }
+  
+  @media (max-width: 768px) {
+    .currency-select {
+      max-width: 110px;
+    }
+  }

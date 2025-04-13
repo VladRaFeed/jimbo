@@ -1,0 +1,45 @@
+.currency-input {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  .currency-input input {
+    padding: 14px;
+    font-size: 1.1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: all 0.3s ease;
+    width: 100%;
+  }
+  
+  .app.light .currency-input input {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.05);
+    color: #2c3e50;
+  }
+  
+  .currency-input input:focus {
+    border-color: #6366f1;
+    outline: none;
+    box-shadow: 0 0 8px rgba(99, 102, 241, 0.3);
+  }
+  
+  .voice-button {
+    padding: 14px;
+    background: linear-gradient(90deg, #6366f1, #a855f7);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .voice-button:hover {
+    background: linear-gradient(90deg, #4f46e5, #9333ea);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
